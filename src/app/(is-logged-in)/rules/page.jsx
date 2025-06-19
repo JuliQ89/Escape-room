@@ -16,9 +16,11 @@ const BreakoutRulesPage = () => {
 
   return (
     <div className="h-screen flex items-center justify-center w-full">
-      <div className="flex flex-col gap-8 items-center w-1/3">
-        <h1 className="text-4xl font-bold text-white">Breakout Regeln</h1>
-        <div className="bg-gray rounded-[4px] flex flex-col gap-6 p-8 w-full">
+      <div className="flex flex-col gap-8 items-center w-full px-8 sm:px-0 sm:w-3/4 md:w-2/4 lg:w-1/3">
+        <h1 className="text-3xl sm:text-4xl font-bold text-white">
+          Breakout Regeln
+        </h1>
+        <div className="bg-gray rounded-[4px] flex flex-col gap-6 p-6 sm:p-8 w-full">
           <div className="flex items-center gap-2.5">
             <input
               type="checkbox"

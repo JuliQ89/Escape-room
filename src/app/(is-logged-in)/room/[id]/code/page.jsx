@@ -35,9 +35,9 @@ const CodePage = () => {
 
   return (
     <div className="h-screen flex items-center justify-center w-full">
-      <div className="flex flex-col gap-8 items-center w-1/3">
+      <div className="flex flex-col gap-8 items-center w-full px-8 sm:px-0 sm:w-3/4 md:w-2/4 lg:w-1/3">
         <form
-          className="bg-gray rounded-[4px] flex flex-col gap-6 p-8 w-full"
+          className="bg-gray rounded-[4px] flex flex-col gap-6 p-6 sm:p-8 w-full"
           onSubmit={handleSubmit}
         >
           <div className="w-full flex flex-col gap-1.5">
