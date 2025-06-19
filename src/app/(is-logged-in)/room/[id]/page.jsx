@@ -1,6 +1,9 @@
 "use client";
 
 import escape_room_1 from "@/assets/images/escape_room_1.jpg";
+import escape_room_2 from "@/assets/images/escape_room_2.jpg";
+import escape_room_3 from "@/assets/images/escape_room_3.jpg";
+import escape_room_4 from "@/assets/images/escape_room_4.jpg";
 import { RiLockPasswordFill } from "react-icons/ri";
 import Image from "next/image";
 import { useParams, useRouter } from "next/navigation";
@@ -9,6 +12,7 @@ import { useEffect } from "react";
 const RoomPage = () => {
   const params = useParams();
   const router = useRouter();
+  const room_id = Number(params.id);
 
   useEffect(() => {
     (async () => {
@@ -30,7 +34,17 @@ const RoomPage = () => {
   return (
     <div className="h-screen flex items-center justify-center relative">
       <Image
-        src={escape_room_1}
+        src={
+          room_id === 1
+            ? escape_room_1
+            : room_id === 2
+            ? escape_room_2
+            : room_id === 3
+            ? escape_room_3
+            : room_id === 4
+            ? escape_room_4
+            : undefined
+        }
         alt=""
         className="w-full h-full object-cover"
       />
