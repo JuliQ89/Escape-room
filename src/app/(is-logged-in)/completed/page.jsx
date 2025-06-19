@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 import { CgLockUnlock } from "react-icons/cg";
@@ -40,6 +41,19 @@ const CompletedPage = () => {
           Start
         </button>
       </div>
+      <footer className="absolute bottom-0 p-8 w-full flex items-center justify-center">
+        <span className="text-base">
+          Made by{" "}
+          <Link
+            href={"https://jssmartcode.de/"}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-300 font-semibold"
+          >
+            JSSmartCode
+          </Link>
+        </span>
+      </footer>
     </div>
   );
 };
