@@ -46,7 +46,7 @@ const RoomPage = () => {
             : undefined
         }
         alt=""
-        className="w-full h-full object-cover"
+        className="w-full h-full object-contain"
       />
       <button
         className="absolute bottom-4 right-4 cursor-pointer rounded-full h-12 w-12 flex items-center justify-center bg-blue shadow-2xl shadow-blue transition-all hover:scale-125"

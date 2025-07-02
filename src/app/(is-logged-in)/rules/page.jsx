@@ -21,12 +21,16 @@ const BreakoutRulesPage = () => {
           Breakout Regeln
         </h1>
         <div className="bg-gray rounded-[4px] flex flex-col gap-6 p-6 sm:p-8 w-full">
+          <ul className="flex flex-col gap-2.5 list-disc list-inside text-white text-base">
+            <li>Bitte kein Plasma herstellen</li>
+          </ul>
+
           <div className="flex items-center gap-2.5">
             <input
               type="checkbox"
               name="regeln_gelesen"
               id="regeln_gelesen"
-              className="w-[18px] h-[18px] bg-blue cursor-pointer"
+              className="w-[16px] h-[16px] bg-blue cursor-pointer"
               value={rulesChecked}
               onChange={(e) => setRulesChecked(e.target.checked)}
             />
